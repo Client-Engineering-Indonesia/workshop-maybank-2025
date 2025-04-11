@@ -1,33 +1,20 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/73d75627-a774-4a00-9338-cc8f471abb89" alt="Updated Image" width="400" height="224">
+  <img src="https://github.com/user-attachments/assets/619606e5-6b9f-490a-b5da-34a81a2289e7" alt="Updated Image" width="400" height="224">
 </div>
 
 ### Introduction
-IBM watsonx Orchestrate uses natural language processing and Generative AI to draw from a catalog of basic and advanced skills to execute on customer, employee, and knowledge worker requests, and perform complex tasks on their behalf.
+IBM StreamSets enables real-time data integration and automation, allowing organizations to efficiently process and manage data streams across hybrid and multi-cloud environments.
 
 ### Digital Labour Workshop
-This workshop aims to introduce automations to organisational workflows using [watsonx Orchestrate](https://www.ibm.com/products/watsonx-orchestrate).<br>
+This workshop aims to introduce automations to organisational workflows using [streamsets]([https://www.ibm.com/products/watsonx-orchestrate](https://www.ibm.com/products/streamsets)).<br>
 
 After the workshop, you will be able to:
-- Automate specific tasks for your enterprise
-- Explore a variety of different tasks that can be automated
-- Leverage the use of Generative AI to enhance user experience
-- Appreciate how Retrieval Augmented Generation (RAG) helps in providing corporate-only information without information breach
-- Design complex decision automation flow
+- Build real-time data pipelines using StreamSets
+- Automate data ingestion, transformation, and movement across hybrid environments
+- Integrate streaming data with enterprise systems for seamless automation
+- Ensure data quality, governance, and observability in event-driven workflows
+- Design scalable and resilient event-driven architectures for data automation
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a396d0d3-c447-45d1-9ce5-8c452eb2c980" alt="Updated Image" style="width:800px; height:400px;">
 </div>
-
-#### Disclaimer:
-Please note that the above mentioned agenda serves as a reference and may not reflect the exact timing or duration of the workshop.
-Actual workshop timings and duration are subject to change.
-#### About the Labs
-- These labs will guide you through building a procurement automation flow, all through watsonx Orchestrate. It's recommended that you start from Lab 0. Each lab builds upon the last and will increase in functionality and complexity.
-- All guides can be found in the "workshop content" folder. The guides detail the step-by-step process of building skills, skill flows and automation.
-- If any skills or skills flow requires connection, connection details are available in the "Skill Connection Details" file or will be provided to you during the workshop.
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/16113687-a58d-4769-b2e7-1a3f55b816b5d" alt="Updated Image" width="937" height="480">
-</div>
-
