@@ -19,7 +19,7 @@ IBM StreamSets enables real-time data integration and automation, allowing organ
   ---
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/89908734-d6f4-4520-ac0c-7d82f25d6082" alt="Updated Image" width="400" height="100">
+  <img src="https://github.com/user-attachments/assets/89908734-d6f4-4520-ac0c-7d82f25d6082" alt="Updated Image" width="380" height="80">
 </div>
 
 ### Introduction
