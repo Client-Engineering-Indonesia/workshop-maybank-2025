@@ -5,7 +5,7 @@
 ### Introduction
 IBM StreamSets enables real-time data integration and automation, allowing organizations to efficiently process and manage data streams across hybrid and multi-cloud environments.
 
-###Log In via Web UI
+#### Log In via Web UI
 
 1. Open `https://cloud.login.streamsets.com/login` in your browser.
    <img width="1716" alt="image" src="https://github.com/user-attachments/assets/b32a6e46-3221-42a7-b9f2-5d9db2e38a27" />
@@ -14,10 +14,12 @@ IBM StreamSets enables real-time data integration and automation, allowing organ
 
 3. When the **dashboard** appears, you’re in
   <img width="1716" alt="image" src="https://github.com/user-attachments/assets/c557e39b-e69f-4842-8f28-ad23d7b5736b" />
-
-
+ 
+ 
   ---
-
+ 
+ 
+ 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/89908734-d6f4-4520-ac0c-7d82f25d6082" alt="Updated Image" width="380" height="80">
 </div>
@@ -25,7 +27,7 @@ IBM StreamSets enables real-time data integration and automation, allowing organ
 ### Introduction
 IBM watsonx is an AI and data platform that empowers businesses to build, scale, and govern AI with trusted data across their enterprise.
 
-###Log In via Web UI
+#### Log In via Web UI
 
 1. Open `https://cloud.login.streamsets.com/login` in your browser.
    <img width="1716" alt="image" src="https://github.com/user-attachments/assets/b32a6e46-3221-42a7-b9f2-5d9db2e38a27" />
