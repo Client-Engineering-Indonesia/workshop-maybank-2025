@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/619606e5-6b9f-490a-b5da-34a81a2289e7" alt="Updated Image" width="400" height="224">
+  <img src="https://github.com/user-attachments/assets/619606e5-6b9f-490a-b5da-34a81a2289e7" alt="Updated Image" width="380" height="200">
 </div>
 
 ### Introduction
@@ -21,7 +21,7 @@ IBM StreamSets enables real-time data integration and automation, allowing organ
  
  
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/89908734-d6f4-4520-ac0c-7d82f25d6082" alt="Updated Image" width="380" height="80">
+  <img src="https://github.com/user-attachments/assets/89908734-d6f4-4520-ac0c-7d82f25d6082" alt="Updated Image" width="380" height="60">
 </div>
 
 ### Introduction
@@ -37,4 +37,4 @@ IBM watsonx is an AI and data platform that empowers businesses to build, scale,
    Password: xxx
 
 4. When the **dashboard** appears, you’re in
-  <img width="1716" alt="image" src="https://github.com/user-attachments/assets/3d6adabf-a561-4352-b979-7fa01986e04c" />
+   <img width="1716" alt="image" src="https://github.com/user-attachments/assets/3d6adabf-a561-4352-b979-7fa01986e04c" />
