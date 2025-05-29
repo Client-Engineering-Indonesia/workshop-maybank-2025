@@ -33,8 +33,8 @@ IBM watsonx is an AI and data platform that empowers businesses to build, scale,
    <img width="1716" alt="image" src="https://github.com/user-attachments/assets/c69d0a98-43ca-4e95-b304-0f84759e2474" />
    
 2. Click Sign In with the username and password that we will share later during the workshop
-   Username: xxx
-   Password: xxx
+   - Username: xxx
+   - Password: xxx
 
 4. When the **dashboard** appears, you’re in
    <img width="1716" alt="image" src="https://github.com/user-attachments/assets/3d6adabf-a561-4352-b979-7fa01986e04c" />
