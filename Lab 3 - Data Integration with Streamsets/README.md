@@ -21,22 +21,6 @@ This lab guides you through setting up a complete data integration flow using **
 6. **Broad Connectivity**  
    Connect seamlessly to a wide range of data sources and targets including databases, cloud storage, messaging systems, and more—across platforms and technologies.
 
-
-### Prerequisites
-
-Before you begin, ensure you have:
-- A compatible operating system (Linux/macOS/Windows WSL)
-- Docker & Docker Compose installed
-- Access to [StreamSets](https://cloud.streamsets.com/)
-- Git installed
-
-### Outcome
-
-By completing this lab, you will:
-- Understand StreamSets architecture and components
-- Deploy pipelines from data generation to machine learning
-- Simulate real-world data integration and scoring scenarios
-
 ---
 
 ### Step 1. Setup StreamSets Platform  
