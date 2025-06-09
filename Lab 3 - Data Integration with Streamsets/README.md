@@ -2,15 +2,20 @@
 
 This lab guides you through setting up a complete data integration flow using **StreamSets**, from environment setup to building a credit scoring machine learning pipeline.
 
----
-
-## 📌 Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have:
 - A compatible operating system (Linux/macOS/Windows WSL)
 - Docker & Docker Compose installed
 - Access to [StreamSets](https://cloud.streamsets.com/)
 - Git installed
+
+### Outcome
+
+By completing this lab, you will:
+- Understand StreamSets architecture and components
+- Deploy pipelines from data generation to machine learning
+- Simulate real-world data integration and scoring scenarios
 
 ---
 
@@ -32,12 +37,3 @@ This step walks you through creating a simulated data generator pipeline to feed
 ### Step 4. Setup Pipeline: Machine Learning (Credit Scoring)  
 Finally, build and deploy a machine learning pipeline for credit scoring using the previously generated data.  
 📂 [4. credit pipeline](https://github.com/Client-Engineering-Indonesia/workshop-maybank-2025/tree/main/Lab%203%20-%20Data%20Integration%20with%20Streamsets/4.%20credit%20pipeline)
-
----
-
-## Outcome
-
-By completing this lab, you will:
-- Understand StreamSets architecture and components
-- Deploy pipelines from data generation to machine learning
-- Simulate real-world data integration and scoring scenarios
