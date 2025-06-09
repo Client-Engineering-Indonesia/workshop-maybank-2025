@@ -2,20 +2,25 @@
 
 This lab guides you through setting up a complete data integration flow using **StreamSets**, from environment setup to building a credit scoring machine learning pipeline.
 
-Key Features of IBM StreamSets include:
-1. No-Code Data Integration:
-   IBM StreamSets allows data integrations to be implemented using a rich graphical environment,with drag and drop connectors and processors; no coding is required.
-2. Schema Flexibility:
-   IBM StreamSets is designed to handle dynamic and evolving data schemas, making it ideal for environments where data structures are constantly changing. It automatically adapts to schema changes, ensuring that data pipelines remain operational even when data formats shift.
-3. Modular and Reusable Pipelines:
-   IBM StreamSets promotes modularity through reusable pipeline fragments, parameterization and Job templates, allowing users to create and maintain complex pipelines more efficiently. This approach reduces redundancy and simplifies pipeline management.
-4. Custom Data Transformations:
-   With support for Groovy, Jython, and other scripting languages, IBM StreamSets allows users to embed custom logic within their pipelines. This flexibility ensures that specific business requirements can be met with the flexibility of custom scripting/coding.
-5. Real-Time Monitoring and Debugging:
-   IBM StreamSets provides robust monitoring and debugging tools, including comprehensive runtime metrics, snapshots, and previews, which help users identify and resolve issues quickly. This real-time visibility into pipeline performance ensures that data flows are optimized and
-reliable.
-6. Broad Connectivity:
-   IBM StreamSets supports a wide range of connectors for popular data sources and targets, including databases, cloud storage, messaging systems, and more. This extensive connectivity makes it easy to integrate data across different platforms and technologies snologies.
+### Key Features
+1. **No-Code Data Integration**  
+   IBM StreamSets provides a rich graphical interface for building pipelines using drag-and-drop connectors and processors—no coding required.
+
+2. **Schema Flexibility**  
+   StreamSets handles dynamic and evolving data schemas seamlessly. It automatically adapts to changes, ensuring pipelines remain functional even when data structures shift.
+
+3. **Modular and Reusable Pipelines**  
+   Build efficient and scalable pipelines using reusable fragments, parameterization, and job templates. This promotes maintainability and reduces duplication.
+
+4. **Custom Data Transformations**  
+   Add business-specific logic using embedded scripts (Groovy, Jython, and more), enabling highly customized data processing within pipelines.
+
+5. **Real-Time Monitoring and Debugging**  
+   Monitor pipelines with real-time metrics, snapshots, and previews. This visibility allows for quick issue identification and performance optimization.
+
+6. **Broad Connectivity**  
+   Connect seamlessly to a wide range of data sources and targets including databases, cloud storage, messaging systems, and more—across platforms and technologies.
+
 
 ### Prerequisites
 
