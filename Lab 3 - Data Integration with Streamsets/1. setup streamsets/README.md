@@ -16,25 +16,4 @@ IBM StreamSets enables real-time data integration and automation, allowing organ
   <img width="1716" alt="image" src="https://github.com/user-attachments/assets/c557e39b-e69f-4842-8f28-ad23d7b5736b" />
  
  
-  ---
- 
- 
- 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/89908734-d6f4-4520-ac0c-7d82f25d6082" alt="Updated Image" width="380" height="60">
-</div>
-
-### Introduction
-IBM watsonx is an AI and data platform that empowers businesses to build, scale, and govern AI with trusted data across their enterprise.
-
-#### Log In via Web UI
-
-1. Open `https://cloud.ibm.com/authorize/itzwatsonx030` in your browser [here](https://cloud.ibm.com/authorize/itzwatsonx030)
-   <img width="1716" alt="image" src="https://github.com/user-attachments/assets/c69d0a98-43ca-4e95-b304-0f84759e2474" />
-   
-2. Click Sign In with the username and password that we will share later during the workshop
-   - Username: xxx
-   - Password: xxx
-
-4. When the **dashboard** appears, you’re in
-   <img width="1716" alt="image" src="https://github.com/user-attachments/assets/3d6adabf-a561-4352-b979-7fa01986e04c" />
+---
