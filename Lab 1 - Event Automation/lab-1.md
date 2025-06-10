@@ -1,8 +1,5 @@
-<div align="center">
-  <img src="images/background.png" alt="Updated Image" width="380" height="200">
-</div>
-
 ### Creating a Event Stream topic
+a Topic is a category or feed name where events are published and stored. Think of it as an organized, categorized log of data.
 
 1. Log in to the Event Streams UI from a supported web browser
 2. Click Home in the primary navigation

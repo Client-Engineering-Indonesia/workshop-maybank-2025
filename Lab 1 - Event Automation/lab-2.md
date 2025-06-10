@@ -7,12 +7,12 @@ Add a topic to Event Endpoint Management to make it available to others as an ev
 
 ![alt text](images/lab-2/1.png)
 3. In the Interaction pane, select how your application will interact with the event source. Click Consume events and click Next.
-![alt text](image.png)
+![alt text](images/lab-2/2.png)
 
 4. Enter a unique name for your new cluster, and click Next.
 
 5. Enter the bootstrap server URL for your Kafka cluster, and click Next.
-![alt text](image.png)
+![alt text](images/lab-2/3.png)
 **Note**: After you click Next, Event Endpoint Management validates the entered server URL. While validating, if any untrusted certificates are found on the bootstrap server URLs, you are asked to confirm whether you accept the certificates found. If you do, select the Accept all certificates checkbox, and click Next.
 
 6. Optional: If the Kafka endpoint is configured to require mutual TLS authentication, then you must upload the private and public keys (ask your Kafka cluster administrator if you do not have them). Upload the private and public keys in PEM format.

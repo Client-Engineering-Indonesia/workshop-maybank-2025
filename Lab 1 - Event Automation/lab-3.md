@@ -3,7 +3,7 @@
 ### Step 1 - Discover the topics to use
 
 1. Go to the **Event Endpoint Management catalog**.
-![alt text](image.png)
+![alt text](images/lab-3/1.png)
 
 2. The Orders topic contains events about **orders** that are made.
 ![alt text](images/lab-3/2.png)
