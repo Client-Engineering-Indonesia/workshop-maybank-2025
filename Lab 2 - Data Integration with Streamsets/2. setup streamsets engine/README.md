@@ -1,109 +1,83 @@
 Now that you have a StreamSets account and have successfully accessed the StreamSets Control Hub portal, the next step is to deploy your engine to your virtual machine (VM). In this workshop, you will be provided with a TechZone VM environment for this purpose.
 
-
-<img width="1280" alt="image" src="https://github.com/user-attachments/assets/dea22f5d-427c-4eb5-a539-ca42b0bcab04" />
-
-
 #### Streamsets Portal
 
 1. **Create deployment on streamsets**
-   - Open `https://cloud.login.streamsets.com/login` in your browser [here](https://cloud.login.streamsets.com/login)
+   - Go to the deployment tab and create a deployment
    <img width="1280" alt="image" src="https://github.com/user-attachments/assets/5cb6727b-7f0f-40ff-a92e-c0d5c703b3c1" />
 
-1. **Create deployment on streamsets**
-   - Open `https://cloud.login.streamsets.com/login` in your browser [here](https://cloud.login.streamsets.com/login)
-   <img width="1716" alt="image" src="https://github.com/user-attachments/assets/b32a6e46-3221-42a7-b9f2-5d9db2e38a27" />
+   - Put deployment with `workshop_streamsets_deployment`
+     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/24d1563c-57ce-45ab-82eb-c49aad24d77c" />
 
-1. **Create deployment on streamsets**
-   - Open `https://cloud.login.streamsets.com/login` in your browser [here](https://cloud.login.streamsets.com/login)
-   <img width="1716" alt="image" src="https://github.com/user-attachments/assets/b32a6e46-3221-42a7-b9f2-5d9db2e38a27" />
+   - In engine labels, put `workshop_streamsets`
+     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/23181402-ed16-4691-a1ae-44b8654996a2" />
 
-1. **Create deployment on streamsets**
-   - Open `https://cloud.login.streamsets.com/login` in your browser [here](https://cloud.login.streamsets.com/login)
-   <img width="1716" alt="image" src="https://github.com/user-attachments/assets/b32a6e46-3221-42a7-b9f2-5d9db2e38a27" />
+   - Here, you can share your deployment with specific emails that you have already set on the `Manage/Users` tab
+     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/7899cd84-122d-4ae5-9d50-96e36595ff38" />
 
-1. **Create deployment on streamsets**
-   - Open `https://cloud.login.streamsets.com/login` in your browser [here](https://cloud.login.streamsets.com/login)
-   <img width="1716" alt="image" src="https://github.com/user-attachments/assets/b32a6e46-3221-42a7-b9f2-5d9db2e38a27" />
+   - After reviewing, click start and generate install scripts
+     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/1d901333-95d7-4924-96fa-e4270d76544a" />
 
-1. **Create deployment on streamsets**
-   - Open `https://cloud.login.streamsets.com/login` in your browser [here](https://cloud.login.streamsets.com/login)
-   <img width="1716" alt="image" src="https://github.com/user-attachments/assets/b32a6e46-3221-42a7-b9f2-5d9db2e38a27" />
+   - Please keep and save the script of the installation, then exit
+     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/4a22cb78-41a4-455a-9177-db5d39dcbca2" />
 
-1. **Create deployment on streamsets**
-   - Open `https://cloud.login.streamsets.com/login` in your browser [here](https://cloud.login.streamsets.com/login)
-   <img width="1716" alt="image" src="https://github.com/user-attachments/assets/b32a6e46-3221-42a7-b9f2-5d9db2e38a27" />
+   - In the Deployments tab, you can see that your deployment is ready. However, in the Engines tab, the engine has not been registered yet.
+     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/c0471848-632e-4b03-b222-b56023c062d2" />
 
 ---
+In order to create the engine, you need a VM to deploy it on. In this workshop, the VM has been provisioned for you by the instructors through TechZone.
 
-2. **Sign Up or Log In**
-  - If you don’t have a StreamSets account, click Sign Up to create one.
-    <img width="1716" alt="image" src="https://github.com/user-attachments/assets/c810cafe-8347-4d3a-9fb5-f4b55dbf3dc2" />
-    
-    - Register your email by filling information here for streamsets account free trial
-      <img width="1716" alt="image" src="https://github.com/user-attachments/assets/2d9a0a31-1332-4363-88d2-7f81def0abfa" />
+#### Virtual Machine Portal
 
-      <img width="1716" alt="image" src="https://github.com/user-attachments/assets/21cae6e8-379b-4f7a-9467-761bf3bc85ce" />
+2. **Create engine on streamsets**
+   - Go to `https://techzone.ibm.com/my/reservations` and make sure your reservation card is visible and open the environment
+   <img width="1281" alt="image" src="https://github.com/user-attachments/assets/dc24a836-1708-4a1d-b526-06bc9752581e" />
 
+   - Scroll down and open the console
+   <img width="1281" alt="image" src="https://github.com/user-attachments/assets/f0127fba-338a-447f-a5d9-5ccbe56bdf00" />
 
-  - If you already have an account, click Log In.
-    - Click Log In using your email, then select an authentication method: Standard (enter email and password, then click Sign In)
-    - click Single Sign-On, choose your identity provider, and approve the request.
-    <img width="1716" alt="image" src="https://github.com/user-attachments/assets/d909a07a-669c-4780-9683-be38a3b5829d" />
+   - Log in as an admin and put the password `IBMDem0s`
+   <img width="1281" alt="image" src="https://github.com/user-attachments/assets/788fc18d-6dd7-4be6-953e-be2269e2f69c" />
 
----
+   - Go to Streamsets folder and copy and paste the script in step 1 to deploy the engine (using the toggle)
+   <img width="1281" alt="image" src="https://github.com/user-attachments/assets/fa498f46-3fe7-4326-b999-c1316b2804a0" />
    
-3. When the **dashboard** appears, you’re in
-  <img width="1716" alt="image" src="https://github.com/user-attachments/assets/5461a736-57af-41dd-8e6b-bf29fb3e68ac" />
- 
----
-
-#### VM Portal
-
-1. **Go to Stramsets Portal Page**
-   - Open `https://cloud.login.streamsets.com/login` in your browser [here](https://cloud.login.streamsets.com/login)
-   <img width="1716" alt="image" src="https://github.com/user-attachments/assets/b32a6e46-3221-42a7-b9f2-5d9db2e38a27" />
-
----
-
-2. **Sign Up or Log In**
-  - If you don’t have a StreamSets account, click Sign Up to create one.
-    <img width="1716" alt="image" src="https://github.com/user-attachments/assets/c810cafe-8347-4d3a-9fb5-f4b55dbf3dc2" />
-    
-    - Register your email by filling information here for streamsets account free trial
-      <img width="1716" alt="image" src="https://github.com/user-attachments/assets/2d9a0a31-1332-4363-88d2-7f81def0abfa" />
-
-      <img width="1716" alt="image" src="https://github.com/user-attachments/assets/21cae6e8-379b-4f7a-9467-761bf3bc85ce" />
-
-
-  - If you already have an account, click Log In.
-    - Click Log In using your email, then select an authentication method: Standard (enter email and password, then click Sign In)
-    - click Single Sign-On, choose your identity provider, and approve the request.
-    <img width="1716" alt="image" src="https://github.com/user-attachments/assets/d909a07a-669c-4780-9683-be38a3b5829d" />
-
----
+   - Put the streamsets data collector download in sdc-download and streamsets data collector in sdc
+   <img width="1281" alt="image" src="https://github.com/user-attachments/assets/4b7bc6d0-53c8-40fa-b9e7-db0127221598" />
    
-3. When the **dashboard** appears, you’re in
-  <img width="1716" alt="image" src="https://github.com/user-attachments/assets/5461a736-57af-41dd-8e6b-bf29fb3e68ac" />
- 
+   - Wait for a couple of minutes until you see the message `Engine started successfully`
+   <img width="1281" alt="image" src="https://github.com/user-attachments/assets/14b4d7dc-ea31-47c3-8b38-2a1d4479e5e3" />
+   
 ---
 
-Techzone portal
-<img width="1279" alt="image" src="https://github.com/user-attachments/assets/7f5308bf-cf59-4956-b7f1-1d5ad8287a3f" />
+#### Streamsets Portal
+Back to the Streamsets portal and check the engine
 
+3. **Check the engine**
+   - Before the deployment in the VM
+   <img width="1281" alt="image" src="https://github.com/user-attachments/assets/afd2bca7-af56-4344-ad80-8d1f941b674b" />
 
+   - After the deployment in the VM
+   <img width="1281" alt="image" src="https://github.com/user-attachments/assets/afd2bca7-af56-4344-ad80-8d1f941b674b" />
 
-```python
-CREATE TABLE financial_transactions (
-    transaction_id   VARCHAR(255),
-    name             VARCHAR(255),
-    address          VARCHAR(255),
-    city             VARCHAR(255),
-    state            VARCHAR(255),
-    account_number   VARCHAR(255),
-    account_type     VARCHAR(255),
-    amount           DECIMAL(10, 2),
-    risk_score       INTEGER,
-    type             VARCHAR(255)
-);
-```
+---
+#### Streamsets Portal
+In this workshop, we will use PostgreSQL to store the data, so we will return to the VM portal to create the necessary table. Since Kafka has already been installed on the VM, there is no need to install it.
+
+4. **Create the table**
+  - Go to the postgres folder, then copy and paste this script
+   ```python
+   CREATE TABLE financial_transactions (
+       transaction_id   VARCHAR(255),
+       name             VARCHAR(255),
+       address          VARCHAR(255),
+       city             VARCHAR(255),
+       state            VARCHAR(255),
+       account_number   VARCHAR(255),
+       account_type     VARCHAR(255),
+       amount           DECIMAL(10, 2),
+       risk_score       INTEGER,
+       type             VARCHAR(255)
+   );
+   ```
+    <img width="1281" alt="image" src="https://github.com/user-attachments/assets/e309c057-3083-4459-8087-ea2b30ab8792" />
