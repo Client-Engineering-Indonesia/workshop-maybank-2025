@@ -55,7 +55,7 @@ Back to the Streamsets portal and check the engine
 
 3. **Check the engine**
    - Before the deployment in the VM
-   <img width="1281" alt="image" src="https://github.com/user-attachments/assets/afd2bca7-af56-4344-ad80-8d1f941b674b" />
+   <img width="1281" alt="image" src="https://github.com/user-attachments/assets/8f052894-d096-4437-96b7-0ad2d50db254" />
 
    - After the deployment in the VM
    <img width="1281" alt="image" src="https://github.com/user-attachments/assets/afd2bca7-af56-4344-ad80-8d1f941b674b" />
