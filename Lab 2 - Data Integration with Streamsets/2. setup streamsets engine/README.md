@@ -39,7 +39,7 @@ In order to create the engine, you need a VM to deploy it on. In this workshop, 
    - Log in as an admin and put the password `IBMDem0s`
    <img width="1281" alt="image" src="https://github.com/user-attachments/assets/788fc18d-6dd7-4be6-953e-be2269e2f69c" />
 
-   - Go to Streamsets folder and copy and paste the script in step 1 to deploy the engine (using the toggle)
+   - Go to streamsets folder and copy and paste the script in step 1 to deploy the engine (using the toggle)
    <img width="1281" alt="image" src="https://github.com/user-attachments/assets/fa498f46-3fe7-4326-b999-c1316b2804a0" />
    
    - Put the streamsets data collector download in sdc-download and streamsets data collector in sdc
@@ -51,7 +51,7 @@ In order to create the engine, you need a VM to deploy it on. In this workshop, 
 ---
 
 #### Streamsets Portal
-Back to the Streamsets portal and check the engine
+Back to the streamsets portal and check the engine
 
 3. **Check the engine**
    - Before the deployment in the VM
