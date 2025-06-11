@@ -56,6 +56,9 @@ The final pipeline will be structured as follows:
   
 <img width="1020" alt="image" src="https://github.com/user-attachments/assets/f4ef199c-d2d2-4800-8b87-288236d3ff55" />
 
+Once you have your streaming pipelines writing to IBM COS, you can use watsonx.data to leverage that data for AI and analytics workloads:
+<img width="1020" alt="image" src="https://github.com/user-attachments/assets/f7ac9838-0d64-47da-b968-754e04d9d243" />
+
 ---
 
 ### Validate the pipeline and run
