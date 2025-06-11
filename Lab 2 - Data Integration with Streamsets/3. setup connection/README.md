@@ -6,18 +6,38 @@ Create the modular connection in the connections tab
 <img width="1285" alt="image" src="https://github.com/user-attachments/assets/3b3aebb7-0f31-4cd8-aa3e-f6c33f5901d5" />
 
 1. **Kafka connection**
-   - Put `kafka` as name and the type
+   - Put `kafka` as the name and the type
    <img width="1280" alt="image" src="https://github.com/user-attachments/assets/326154c0-9f60-4a88-9c68-3c94607cf1fe" />
+   
+   - Select None (Security Protocol=PLAINTEXT) in the security options
+     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/71df3f8c-24f0-4fdd-a305-ecf484393f5e" />
+     
+   - Copy and paste the JDBC Connection String
+     ```text
+     localhost:9092
+     ```
+     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/a57a4c60-f312-425a-88f3-b3a44d5c532b" />
 
-   - Test connection and save
-     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/37cee246-2a6f-4503-9216-3c5a37f0a197" />
+2. **Postgres connection**
+   - Put `Postgres` as the name and `JDBC` as the type
+   <img width="1280" alt="image" src="https://github.com/user-attachments/assets/dcd3519e-db23-4756-9719-96380a297f37" />
+
+   - Copy and paste the JDBC Connection String
+     ```text
+     jdbc:postgresql://localhost:5432/postgres
+     ```
+     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/b5262e9d-d97f-4f73-b185-d8aaf47a09f7" />
+
+   - Put the credentials where the username and password are `postgres`, then test the connection and save
+     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/81c5867e-084f-4aa8-9c2c-d9a99c4d1eb7" />
+
 
 ---
 
 #### Virtual Machine Portal
 In this workshop, we will use PostgreSQL to store the data, so we will return to the VM portal to create the necessary table. Since Kafka has already been installed on the VM, there is no need to install it.
 
-1. **Postgress - Create the table**
+1. **Postgres - Create the table**
   - Go to the postgres folder, then copy and paste this script
    ```python
    CREATE TABLE financial_transactions (
