@@ -6,70 +6,59 @@
 ![alt text](images/lab-3/1.png)
 
 2. The Orders topic contains events about **orders** that are made.
-![alt text](images/lab-3/2.png)
+![alt text](images/lab-2/event-information-lab-2.png)
 
 ### Step 2 - Provide a source of events
 
-The next step is to create an event source in Event Processing for the topic to use in the flow.
+1. Click **Create** to create New Flow.
+![alt text](images/lab-3/create-new-flow-lab-3.png)
 
-Use the server address information and Generate access credentials button on the topic page in the catalog to define an event source node.
+2. Click edit **event source**
 
-![alt text](images/lab-3/3.png)
+3. Choose **add event source**
+![alt text](images/lab-3/add-event-source-lab-3.png)
 
-### Step 3 : Calculate order totals
+4. Fill credentials. You can get credentials of Topic Endpoint Managenet from subscribe on catalog menu on EEM.
+![alt text](images/lab-2/create-subscribe-lab-2.png)
+
+5. Choose topic to add as source
+![alt text](images/lab-3/choose-topic-as-source-lab-3.png)
+
+6. Set massage format as JSON
+![alt text](images/lab-3/message-format-lab-3.png)
+
+7. Set Event details. set name as **promotions event source**
+![alt text](images/lab-3/set-event-source-name.png)
+
+### Step 3 : Checking category
 
 1. Create a **Transform node**.
-![alt text](images/lab-3/4.png)
+![alt text](images/lab-3/create-transform-node.png)
 Create a transform node by dragging one onto the canvas. You can find this in the Processors section of the left panel.
 Click and drag from the small gray dot on the event source to the matching dot on the transform node.
 
 2. Hover over the transform node and click **Edit** icon Edit to configure the node.
-Call the transform node Calculate order total.
-![alt text](images/lab-3/5.png)
+Call the transform node **Mark isPublish**.
+![alt text](images/lab-3/mark-as-publish.png)
 
-3. Create a new property called order total.
-![alt text](images/lab-3/6.png)
-An order event includes the unit cost of an item, and the quantity of items in the order. The order total can be computed by multiplying these two numbers.
+3. Create a new property called **isPublish**.
+![alt text](images/lab-3/create-prop-ispublish.png)
 Suggested value for the property:
 
-```quantity * price```
+```IF(category = 'internet', 0, 1)```
 
 4. You can leave the other event properties as they are.
 
 5. Click **Configure** to finalize the transform.
+![alt text](image.png)
 
-### Step 4 : Identify high-value EMEA orders
-The next step is to filter the stream of events based on this new total order value property to select the high value EMEA orders.
-
-1. Add a Filter node.
-![alt text](images/lab-3/7.png)
-Create a filter node by dragging one onto the canvas. You can find this in the Processors section of the left panel.
-Click and drag from the small gray dot on the event source to the matching dot on the filter node.
-
-2. Hover over the filter node and click Edit icon Edit to configure the node.
-Name the filter node to show that it is going to select high value EMEA orders.
-
-3. Use the assistant to start a filter based on orders with an order total greater than 350.
-![alt text](images/lab-3/8.png)
-
-4. Click **Add to expression**.
-
-5. Edit the filter so that it also only matches orders that are made in the EMEA region.
-![alt text](images/lab-3/9.png)
-
-Suggested value for the filter expression:
-```
-`order total` > 350 AND region = 'EMEA'
-```
-
-6. Click **Configure** to finalize the filter.
-
-### Step 5 : Test the flow
+### Step 4 : Test the flow
 The final step is to run your event processing flow and view the results.
 
 1. Use the Run menu, and select Include historical to run your filter on the history of order events available on this Kafka topic.
+![alt text](images/lab-3/run-test-lab-3.png)
 
-2. Click the Filter node to see a live view of results from your filter. It is updated as new events are emitted onto the orders topic.
-![alt text](images/lab-3/10.png)
+2. Click the Filter node to see a live view of results from your filter. It is updated as new events are emitted onto the promotion topic.
+![alt text](images/lab-3/final-result-lab-3.png)
 
 3. When you have finished reviewing the results, you can stop this flow.
