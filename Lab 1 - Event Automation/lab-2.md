@@ -71,3 +71,14 @@ fill the detail:
 
 8. You will redirect to main detail config page. in this page, click **Publish**
 ![alt text](images/lab-2/publish-endpoint-lab-2.png)
+
+### Checking Active Publihed Topic Endpoint
+
+1. Click on **catalog** menu on navbar.
+![alt text](images/lab-2/catalog-menu-lab-2.png)
+
+2. Choose your topic
+![alt text](images/lab-2/choose-your-topic-lab-2.png)
+
+3. Page fill show how to connect and its rules.
+![alt text](images/lab-2/detail-management-topic-lab-2.png)
