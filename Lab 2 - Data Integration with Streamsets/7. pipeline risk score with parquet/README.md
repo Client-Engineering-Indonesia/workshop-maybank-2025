@@ -35,14 +35,14 @@ The final pipeline will be structured as follows:
 - Check list Use Specific Region
 - Put Region as **Other-Specify**
 - Copy and Paste the Endpoint
-  ```text
+  ```sql
   s3.us-south.cloud-object-storage.appdomain.cloud
   ```
 <img width="1020" alt="image" src="https://github.com/user-attachments/assets/e00155e8-6672-4516-8c92-5c6428c6c6e2" />
 - Check list Use Specific Region
 - Put Signin region as **Other-Specify**
 - Copy and Paste the Endpoint
-  ```txt
+  ```sql
   us-south
   ```
 - Put bucket name as **streamsets-demo**
@@ -51,7 +51,7 @@ The final pipeline will be structured as follows:
 ---
 
 ### Validate the pipeline and run
-1. Check Postgress
+1. Check Postgres
    ```sql
    sudo su – postgres
    psql
