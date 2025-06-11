@@ -22,7 +22,10 @@
     },
     "category": {
       "type": "string"
+    },
+    "isPublish": {
+      "type": "integer"
     }
   },
-  "required": ["id", "title", "description", "valid_from", "valid_to", "category"]
+  "required": ["id", "title", "description", "valid_from", "valid_to", "category", "isPublish"]
 }

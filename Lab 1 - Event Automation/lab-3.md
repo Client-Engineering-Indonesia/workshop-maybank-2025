@@ -5,12 +5,12 @@
 1. Go to the **Event Endpoint Management catalog**.
 ![alt text](images/lab-3/1.png)
 
-2. The Orders topic contains events about **orders** that are made.
+2. The Promotions topic (wahyu-promotion-topic-config-1) contains events about **promotions** that are made.
 ![alt text](images/lab-2/event-information-lab-2.png)
 
 ### Step 2 - Provide a source of events
 
-1. Click **Create** to create New Flow.
+1. Click **Create** to create New Flow. and named as **(your-name) promotion flow**
 ![alt text](images/lab-3/create-new-flow-lab-3.png)
 
 2. Click edit **event source**
@@ -20,8 +20,15 @@
 
 4. Fill credentials. You can get credentials of Topic Endpoint Managenet from subscribe on catalog menu on EEM.
 ![alt text](images/lab-2/create-subscribe-lab-2.png)
+```
+bootstrapserver=eem-demo-gw-ibm-egw-rt-tools.apps.itz-tx7iu2.infra01-lb.tok04.techzone.ibm.com:443
 
-5. Choose topic to add as source
+username=eem-2e6b6632-5ebe-4a7b-b1f1-673c121e78f7
+
+password=4171bb61-a936-4e27-be8d-55bd83ef49ea
+```
+
+5. Choose topic (**wahyu-promotion-topic-config-1**) to add as source
 ![alt text](images/lab-3/choose-topic-as-source-lab-3.png)
 
 6. Set massage format as JSON
@@ -50,7 +57,7 @@ Suggested value for the property:
 4. You can leave the other event properties as they are.
 
 5. Click **Configure** to finalize the transform.
-![alt text](image.png)
+![alt text](images/lab-3/final-transform.png)
 
 ### Step 4 : Test the flow
 The final step is to run your event processing flow and view the results.
