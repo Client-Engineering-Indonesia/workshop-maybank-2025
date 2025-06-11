@@ -47,3 +47,21 @@ The final pipeline will be structured as follows:
   ```
 - Put bucket name as **streamsets-demo**
 <img width="1020" alt="image" src="https://github.com/user-attachments/assets/f4ef199c-d2d2-4800-8b87-288236d3ff55" />
+
+---
+
+### Validate the pipeline and run
+1. Check Postgress
+   ```sql
+   sudo su – postgres
+   psql
+   select count(*) from financial_transactions;
+   select * from financial_transactions limit 20;
+   ```
+
+   ```sql
+   SELECT state, AVG(risk_score) AS avg_risk_score, COUNT(*) AS num_transactions FROM financial_transactions GROUP BY state ORDER BY avg_risk_score DESC LIMIT 5;
+   ```
+
+2. Parquet
+   Check inside each parquet
