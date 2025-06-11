@@ -2,22 +2,22 @@ Now that you have a streamsets account and have successfully accessed the Stream
 
 #### Streamsets Portal
 
-1. **Create deployment on streamsets**
-   - Go to the deployment tab and create a deployment
-   <img width="1280" alt="image" src="https://github.com/user-attachments/assets/5cb6727b-7f0f-40ff-a92e-c0d5c703b3c1" />
+Create the modular connection in the connections tab
+<img width="1285" alt="image" src="https://github.com/user-attachments/assets/3b3aebb7-0f31-4cd8-aa3e-f6c33f5901d5" />
 
-   - Put deployment with `workshop_streamsets_deployment`
-     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/24d1563c-57ce-45ab-82eb-c49aad24d77c" />
+1. **Kafka connection**
+   - Put `kafka` as name and the type
+   <img width="1280" alt="image" src="https://github.com/user-attachments/assets/326154c0-9f60-4a88-9c68-3c94607cf1fe" />
 
-   - In engine labels, put `workshop_streamsets`
-     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/23181402-ed16-4691-a1ae-44b8654996a2" />
+   - Test connection and save
+     <img width="1280" alt="image" src="https://github.com/user-attachments/assets/37cee246-2a6f-4503-9216-3c5a37f0a197" />
 
 ---
 
 #### Virtual Machine Portal
 In this workshop, we will use PostgreSQL to store the data, so we will return to the VM portal to create the necessary table. Since Kafka has already been installed on the VM, there is no need to install it.
 
-4. **Create the table**
+4. **Postgress - Create the table**
   - Go to the postgres folder, then copy and paste this script
    ```python
    CREATE TABLE financial_transactions (
