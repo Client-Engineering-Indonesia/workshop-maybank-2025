@@ -7,7 +7,7 @@ In this step, you will create a brand new pipeline that consumes a stream of fin
 
 ![image](https://github.com/user-attachments/assets/0e6674ff-f2ed-4429-9110-70e0142ef20d)
 
-- Enter the name for the pipeline as Streaming. Leave the rest of the items as the defaults
+- Enter the name for the pipeline as Streaming. Leave the rest of the items as the defaults.
   **Note:** Put the name of your pipeline with your name in the end. For example, **Streaming Pipeline RA**, where RA is the abbreviation name
 - Click Next
 
