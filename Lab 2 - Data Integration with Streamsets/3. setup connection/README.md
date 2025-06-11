@@ -17,7 +17,7 @@ Create the modular connection in the connections tab
 #### Virtual Machine Portal
 In this workshop, we will use PostgreSQL to store the data, so we will return to the VM portal to create the necessary table. Since Kafka has already been installed on the VM, there is no need to install it.
 
-4. **Postgress - Create the table**
+1. **Postgress - Create the table**
   - Go to the postgres folder, then copy and paste this script
    ```python
    CREATE TABLE financial_transactions (

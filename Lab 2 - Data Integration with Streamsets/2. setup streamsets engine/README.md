@@ -61,23 +61,3 @@ Back to the streamsets portal and check the engine
    <img width="1281" alt="image" src="https://github.com/user-attachments/assets/afd2bca7-af56-4344-ad80-8d1f941b674b" />
 
 ---
-#### Streamsets Portal
-In this workshop, we will use PostgreSQL to store the data, so we will return to the VM portal to create the necessary table. Since Kafka has already been installed on the VM, there is no need to install it.
-
-4. **Create the table**
-  - Go to the postgres folder, then copy and paste this script
-   ```python
-   CREATE TABLE financial_transactions (
-       transaction_id   VARCHAR(255),
-       name             VARCHAR(255),
-       address          VARCHAR(255),
-       city             VARCHAR(255),
-       state            VARCHAR(255),
-       account_number   VARCHAR(255),
-       account_type     VARCHAR(255),
-       amount           DECIMAL(10, 2),
-       risk_score       INTEGER,
-       type             VARCHAR(255)
-   );
-   ```
-   <img width="1281" alt="image" src="https://github.com/user-attachments/assets/e309c057-3083-4459-8087-ea2b30ab8792" />
