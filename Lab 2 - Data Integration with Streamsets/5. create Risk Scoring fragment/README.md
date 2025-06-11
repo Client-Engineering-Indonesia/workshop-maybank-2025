@@ -52,3 +52,23 @@ Click Start Pipeline and it should look like this:
 
 Note: Even though the pipeline is running, there are no metrics to display just yet because there
 have not yet been any calls to this service.
+
+---
+
+Publish and Next
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/ca3ab068-56a2-447d-b4b9-7f9f16a3f555" />
+
+Save and Create New Job
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/95bfd163-6981-4f27-a2c1-1c1c72d256c6" />
+
+Create job instance. Next
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/d5702475-0bec-4039-88bb-6dcd26031c8d" />
+
+Select the pipeline. Next
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/bc20c8fc-8106-47c8-af6a-4bfb63bd5dc2" />
+
+Configure the job. Next
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/3a57e73a-23af-4a0c-8ec8-17e127d90329" />
+
+Review and start monitor job
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/1ff15ae2-97e0-4ae3-a283-62e712009793" />
