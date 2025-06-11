@@ -1,16 +1,16 @@
 ### Create a streaming Pipeline
 In this step, you will create a brand new pipeline that consumes a stream of financial transactions from Kafka, enriches each transaction with a call to a risk-scoring service, and routes high-risk transactions to PostgreSQL.
 
-Click Build
-Click Pipelines
-Click Create a pipeline
+- Click Build
+- Click Pipelines
+- Click Create a pipeline
 
 ![image](https://github.com/user-attachments/assets/0e6674ff-f2ed-4429-9110-70e0142ef20d)
 
-1. Enter the name for the pipeline as Streaming. Leave the rest of the items as the defaults
-2. Click Next
+- Enter the name for the pipeline as Streaming. Leave the rest of the items as the defaults
+  **Note:** Put the name of your pipeline with your name in the end. For example, **Streaming Pipeline RA**, where RA is the abbreviation name
+- Click Next
 
-**Note:** Put the name of your pipeline with your name in the end. For example, **Streaming Pipeline RA**, where RA is the abbreviation name
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/16a7ec2b-5328-4822-82bd-e0a5a444dc08" />
 
 Make sure the Authoring Engine is set to your engine.
