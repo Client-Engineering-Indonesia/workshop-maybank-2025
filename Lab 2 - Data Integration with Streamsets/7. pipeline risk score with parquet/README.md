@@ -28,6 +28,10 @@ The final pipeline will be structured as follows:
   
 <img width="1020" alt="image" src="https://github.com/user-attachments/assets/a28b82a3-36d3-4269-977b-caaccadcc006" />
 
+Run the pipeline:
+
+<img width="1020" alt="image" src="https://github.com/user-attachments/assets/cd5d01ec-3c84-4dbd-99ee-a2852c429cf1" />
+
 ---
 
 ### Connect as parquet (IBM COS)
@@ -56,7 +60,13 @@ The final pipeline will be structured as follows:
   
 <img width="1020" alt="image" src="https://github.com/user-attachments/assets/f4ef199c-d2d2-4800-8b87-288236d3ff55" />
 
+Run the pipeline:
+
+<img width="1020" alt="image" src="https://github.com/user-attachments/assets/c7af1635-3a63-4f88-9a52-621fc1877bc2" />
+
+
 Once you have your streaming pipelines writing to IBM COS, you can use watsonx.data to leverage that data for AI and analytics workloads:
+
 <img width="1020" alt="image" src="https://github.com/user-attachments/assets/f7ac9838-0d64-47da-b968-754e04d9d243" />
 
 ---
