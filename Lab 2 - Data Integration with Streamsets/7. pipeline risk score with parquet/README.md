@@ -35,14 +35,14 @@ The final pipeline will be structured as follows:
 - Check list Use Specific Region
 - Put Region as **Other-Specify**
 - Copy and Paste the Endpoint
-  ```sql
+  ```text
   s3.us-south.cloud-object-storage.appdomain.cloud
   ```
 <img width="1020" alt="image" src="https://github.com/user-attachments/assets/e00155e8-6672-4516-8c92-5c6428c6c6e2" />
 - Check list Use Specific Region
 - Put Signin region as **Other-Specify**
 - Copy and Paste the Endpoint
-  ```sql
+  ```text
   us-south
   ```
 - Put bucket name as **streamsets-demo**
