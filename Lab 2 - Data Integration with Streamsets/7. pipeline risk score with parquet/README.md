@@ -1,67 +1,91 @@
-### Create a streaming Pipeline (Continue)
 
-Previously, you set up a stream pipeline that filtered data based on risk scores—either storing them in PostgreSQL or discarding them. Now, as a Data Scientist, you need to export this data into Parquet format for further analysis, typically for machine learning prediction tasks. In this updated pipeline, we will use IBM Cloud Object Storage as the destination for the Parquet files. 
+# Streaming Pipeline Enhancement: Export to Parquet
 
---- 
-### Connect as parquet (Local file system/ Local FS)
-The final pipeline will be structured as follows:
-<img width="1020" alt="image" src="https://github.com/user-attachments/assets/1903e949-bba4-44d6-976f-36be0af783ea" />
-
-- Add Stage
-- Select Local FS
-- Change name to **Datalake (Parquet)**
-  <img width="1020" alt="image" src="https://github.com/user-attachments/assets/5570f5f8-2139-497d-8261-295a4ff6987b" />
-  
-- Copy and Paste the Directory Template
-  ```text
-  /tmp/transactions
-  ```
-- Put **parquet** in the fFiles Suffix
-<img width="1020" alt="image" src="https://github.com/user-attachments/assets/d9c10f13-2b5f-418b-8ee8-1c1944ae5cea" />
-
-- In the Data Format tab, change the Data Format to **Parquet**
-- Change the **Snappy** for the Parquet Compression Codec
-- Change the **2.0** for the Parquet Format Version
-<img width="1020" alt="image" src="https://github.com/user-attachments/assets/a28b82a3-36d3-4269-977b-caaccadcc006" />
+In this phase, you will extend your existing StreamSets pipeline that filters transactions based on risk score. The new requirement is to export the filtered data into Parquet format for further analysis, typically for machine learning prediction tasks. The Parquet files will be stored in either the local file system or IBM Cloud Object Storage (IBM COS).
 
 ---
 
-### Connect as parquet (IBM COS)
+## Option 1: Export to Local File System (Local FS)
 
-<img width="1020" alt="image" src="https://github.com/user-attachments/assets/3f66e238-26dc-4b8f-bce0-c4d0421781cd" />
-- Add Stage
-- Select Amazon S3
-- Put the creds of **Access Key ID** and **Secret Access Key** from the instructors
-- Check list Use Specific Region
-- Put Region as **Other-Specify**
-- Copy and Paste the Endpoint
-  ```text
-  s3.us-south.cloud-object-storage.appdomain.cloud
-  ```
-<img width="1020" alt="image" src="https://github.com/user-attachments/assets/e00155e8-6672-4516-8c92-5c6428c6c6e2" />
-- Check list Use Specific Region
-- Put Signin region as **Other-Specify**
-- Copy and Paste the Endpoint
-  ```text
-  us-south
-  ```
-- Put bucket name as **streamsets-demo**
-<img width="1020" alt="image" src="https://github.com/user-attachments/assets/f4ef199c-d2d2-4800-8b87-288236d3ff55" />
+### Add Output Stage: Local FS (Parquet)
+
+1. Add a new stage and select `Local FS`.
+2. Change the name of the stage to:
+   ```
+   Datalake (Parquet)
+   ```
+
+3. Set the **Directory Template** to:
+   ```
+   /tmp/transactions
+   ```
+
+4. Set the **Files Suffix** to:
+   ```
+   parquet
+   ```
+
+5. In the **Data Format** tab:
+   - Set **Data Format** to `Parquet`
+   - Set **Parquet Compression Codec** to `Snappy`
+   - Set **Parquet Format Version** to `2.0`
 
 ---
 
-### Validate the pipeline and run
-1. Check Postgres
-   ```sql
-   sudo su – postgres
-   psql
-   select count(*) from financial_transactions;
-   select * from financial_transactions limit 20;
+## Option 2: Export to IBM Cloud Object Storage (IBM COS)
+
+### Add Output Stage: Amazon S3 (IBM COS-Compatible)
+
+1. Add a new stage and select `Amazon S3`.
+2. Enter your **Access Key ID** and **Secret Access Key** (provided by the instructor).
+3. Check `Use Specific Region`.
+4. Set:
+   - **Region**: `Other - Specify`
+   - **Endpoint**:
+     ```
+     s3.us-south.cloud-object-storage.appdomain.cloud
+     ```
+
+5. Check `Use Specific Region` again (for Signin region).
+6. Set:
+   - **Signin Region**:
+     ```
+     us-south
+     ```
+
+7. Set the **Bucket Name** to:
+   ```
+   streamsets-demo
    ```
 
-   ```sql
-   SELECT state, AVG(risk_score) AS avg_risk_score, COUNT(*) AS num_transactions FROM financial_transactions GROUP BY state ORDER BY avg_risk_score DESC LIMIT 5;
-   ```
+---
 
-2. Parquet
-   Check inside each parquet
+## Validate the Pipeline
+
+### 1. Validate Postgres Output
+
+Open Postgres:
+
+```bash
+sudo su - postgres
+psql
+```
+
+Run these queries:
+
+```sql
+SELECT COUNT(*) FROM financial_transactions;
+SELECT * FROM financial_transactions LIMIT 20;
+
+SELECT state, AVG(risk_score) AS avg_risk_score, COUNT(*) AS num_transactions
+FROM financial_transactions
+GROUP BY state
+ORDER BY avg_risk_score DESC
+LIMIT 5;
+```
+
+### 2. Validate Parquet Output
+
+- Check the `/tmp/transactions` folder for local FS output
+- Or, check the `streamsets-demo` bucket in IBM COS for uploaded `.parquet` files
+- Ensure the files are compressed with `Snappy` and follow Parquet 2.0 format
