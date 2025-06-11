@@ -9,7 +9,7 @@ The final pipeline will be structured as follows:
 
 - Add Stage
 - Select Local FS
-- Change name with ** Datalake (Parquet)
+- Change name to **Datalake (Parquet)**
   <img width="1020" alt="image" src="https://github.com/user-attachments/assets/5570f5f8-2139-497d-8261-295a4ff6987b" />
   
 - Copy and Paste the Directory Template
@@ -19,7 +19,7 @@ The final pipeline will be structured as follows:
 - Put **parquet** in the fFiles Suffix
 <img width="1020" alt="image" src="https://github.com/user-attachments/assets/d9c10f13-2b5f-418b-8ee8-1c1944ae5cea" />
 
-- In the Data Format tab, change the Data Format as **Parquet**
+- In the Data Format tab, change the Data Format to **Parquet**
 - Change the **Snappy** for the Parquet Compression Codec
 - Change the **2.0** for the Parquet Format Version
 <img width="1020" alt="image" src="https://github.com/user-attachments/assets/a28b82a3-36d3-4269-977b-caaccadcc006" />
@@ -42,7 +42,7 @@ The final pipeline will be structured as follows:
 - Check list Use Specific Region
 - Put Signin region as **Other-Specify**
 - Copy and Paste the Endpoint
-  ```text
+  ```txt
   us-south
   ```
 - Put bucket name as **streamsets-demo**
