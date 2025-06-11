@@ -18,14 +18,14 @@ Create the modular connection in the connections tab
      ```
      <img width="1280" alt="image" src="https://github.com/user-attachments/assets/a57a4c60-f312-425a-88f3-b3a44d5c532b" />
 
-2. **Postgres connection**
+2. **Web client connection**
    - Put `Risk Scoring Microservice` as the name and `WebClient` as the type
      <img width="1280" alt="image" src="https://github.com/user-attachments/assets/b5262e9d-d97f-4f73-b185-d8aaf47a09f7" />
 
    - Put the URL `http://localhost:8000`, authentication scheme as `None` and Keystore `Automatic (for most HTTP and HTTPS requests). Then save
      <img width="1280" alt="image" src="https://github.com/user-attachments/assets/81c5867e-084f-4aa8-9c2c-d9a99c4d1eb7" />
 
-3. **Web client connection**
+3. **Postgres connection**
    - Put `Postgres` as the name and `JDBC` as the type
    <img width="1280" alt="image" src="https://github.com/user-attachments/assets/dcd3519e-db23-4756-9719-96380a297f37" />
 
@@ -35,8 +35,7 @@ Create the modular connection in the connections tab
      ```
      <img width="1280" alt="image" src="https://github.com/user-attachments/assets/38aaa224-2d98-4365-85a0-8a22967169ba" />
 
-
-   - Create connection 
+   - Create a connection 
      <img width="1280" alt="image" src="https://github.com/user-attachments/assets/26328010-349c-4f84-b054-4239b253dada" />
 
 All the connections dashboard now:
