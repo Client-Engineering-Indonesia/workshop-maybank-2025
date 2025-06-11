@@ -13,8 +13,6 @@ Click Create a pipeline
 **Note:** Put the name of your pipeline with your name in the end. For example, **Streaming Pipeline RA**, where RA is the abbreviation name
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/16a7ec2b-5328-4822-82bd-e0a5a444dc08" />
 
-![image](https://github.com/user-attachments/assets/3fe7dc54-e2d6-4385-a65a-457bf5277388)
-
 Make sure the Authoring Engine is set to your engine.
 
 Click Save & Open in Canvas
