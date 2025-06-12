@@ -52,7 +52,7 @@ Call the transform node **Mark isPublish**.
 ![alt text](images/lab-3/create-prop-ispublish.png)
 Suggested value for the property:
 
-```IF(category = 'internet', 0, 1)```
+```IF(category = 'Internet', 0, 1)```
 
 4. You can leave the other event properties as they are.
 
