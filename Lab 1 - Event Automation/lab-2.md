@@ -72,7 +72,7 @@ fill the detail:
 8. You will redirect to main detail config page. in this page, click **Publish**
 ![alt text](images/lab-2/publish-endpoint-lab-2.png)
 
-### Checking Active Publihed Topic Endpoint
+### Checking and Generate Access to Publihed Topic Endpoint
 
 1. Click on **catalog** menu on navbar.
 ![alt text](images/lab-2/catalog-menu-lab-2.png)
@@ -82,3 +82,18 @@ fill the detail:
 
 3. Page fill show how to connect and its rules.
 ![alt text](images/lab-2/detail-management-topic-lab-2.png)
+
+4. Click Request Access and fill the form
+![alt text](images/lab-2/request-access-lab-2.png)
+
+5. Go to page access request and accept the request
+![alt text](images/lab-2/access-page-lab-2.png)
+
+6. Approve request
+![alt text](images/lab-2/approve-request-access-lab-2.png)
+
+7. Subscribe the Topic
+![alt text](images/lab-2/subscribe-approved-topic.png)
+
+8. Credential Generated
+![alt text](images/lab-2/credential-generated-lab-2.png)
